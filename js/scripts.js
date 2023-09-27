@@ -1,20 +1,23 @@
+/*  Important information to setup the project. */
+
 /* 
-    sources to valid api key:
+    ### sources to valid api key:
     https://openweathermap.org/appid#example
     https://home.openweathermap.org/api_keys
 */
 
 /*
-    How can I switch between temperature units in API calls?
+    ### How can I switch between temperature units in API calls?
     Temperature is available in Fahrenheit, Celsius and Kelvin units. Kelvin is used by default, with no need to use the units parameter in API calls.
     For temperature in Celsius, use "units=metric". 
     Source: https://openweathermap.org/faq#:~:text=Temperature%20is%20available%20in%20Fahrenheit,units%20parameter%20in%20API%20calls.
 */
 
 /* 
-    JSON format API response fields:
+    ### JSON format API response fields:
     https://openweathermap.org/current
 */
+
 
 // variables
 
@@ -27,7 +30,7 @@ let average = document.querySelector(".average")
 let windSpeed = document.querySelector(".windSpeed")
 let humidity = document.querySelector(".humidity")
 let weatherParameter = document.querySelector(".weatherParameter")
-let weatherCondition = document.querySelector(".weatherCondition")
+let weatherDescription = document.querySelector(".weatherDescription")
 let button = document.querySelector(".button") 
 
 const apiKey = "a0b6dbf50b04399ef8f5079a298d1e04"
@@ -63,7 +66,7 @@ async function weatherForecast() {
         windSpeed.textContent = `${data.list[0].wind.speed.toFixed(2)} meter/sec`;
         humidity.textContent = `${data.list[0].main.humidity} %`;
         weatherParameter.textContent = data.list[0].weather[0].main;
-        weatherCondition.textContent = data.list[0].weather[0].description;
+        weatherDescription.textContent = data.list[0].weather[0].description;
 
     } catch (error) {
 	console.error(error);
