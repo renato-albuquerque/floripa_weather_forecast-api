@@ -18,6 +18,7 @@ let weather1 = document.querySelector(".weather-1")
 let weather2 = document.querySelector(".weather-2")
 let weather3 = document.querySelector(".weather-3")
 let weather4 = document.querySelector(".weather-4") 
+let average = document.querySelector(".average")
 let button = document.querySelector(".button") 
 
 let todayDate = new Date();
@@ -32,24 +33,28 @@ const url = `https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=${
 
 // events
 
-button.addEventListener("click", weatherForecastOne)
+button.addEventListener("click", weatherForecast)
 
 
 // functions
 
-async function weatherForecastOne() {
+async function weatherForecast() {
 
-try {
-	const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-} catch (error) {
+    try {
+        let response = await fetch(url);
+        let data = await response.json();
+        console.log(data);
+
+        weather1.textContent = data.list[0].main.temp.toFixed(2);
+        weather2.textContent = data.list[1].main.temp.toFixed(2);
+        weather3.textContent = data.list[2].main.temp.toFixed(2);
+        weather4.textContent = data.list[3].main.temp.toFixed(2);
+
+        average.textContent = ((data.list[0].main.temp + data.list[1].main.temp + data.list[2].main.temp + data.list[3].main.temp)/4);
+
+    } catch (error) {
 	console.error(error);
-}
-
-weather1.textContent = "weather 01";
-weather1.textContent = data;
-weather2.textContent = "weather 02";
+    }
 }
 
 
