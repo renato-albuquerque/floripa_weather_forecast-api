@@ -27,10 +27,10 @@ let weather2 = document.querySelector(".weather-2")
 let weather3 = document.querySelector(".weather-3")
 let weather4 = document.querySelector(".weather-4") 
 let average = document.querySelector(".average")
-let windSpeed = document.querySelector(".windSpeed")
-let humidity = document.querySelector(".humidity")
-let weatherParameter = document.querySelector(".weatherParameter")
-let weatherDescription = document.querySelector(".weatherDescription")
+let windSpeed = document.querySelector(".windSpeed span")
+let humidity = document.querySelector(".humidity span")
+let weatherParameter = document.querySelector(".weatherParameter span")
+let weatherDescription = document.querySelector(".weatherDescription span")
 let button = document.querySelector(".button") 
 
 const apiKey = "a0b6dbf50b04399ef8f5079a298d1e04"
@@ -56,14 +56,14 @@ async function weatherForecast() {
         let data = await response.json();
         console.log(data);
 
-        weather1.textContent = `${data.list[0].main.temp.toFixed(2)} °C`;
-        weather2.textContent = `${data.list[1].main.temp.toFixed(2)} °C`;
-        weather3.textContent = `${data.list[2].main.temp.toFixed(2)} °C`;
-        weather4.textContent = `${data.list[3].main.temp.toFixed(2)} °C`;
+        weather1.textContent = `${data.list[0].main.temp.toFixed(2)}°C`;
+        weather2.textContent = `${data.list[1].main.temp.toFixed(2)}°C`;
+        weather3.textContent = `${data.list[2].main.temp.toFixed(2)}°C`;
+        weather4.textContent = `${data.list[3].main.temp.toFixed(2)}°C`;
 
-        average.textContent = `${((data.list[0].main.temp + data.list[1].main.temp + data.list[2].main.temp + data.list[3].main.temp)/4).toFixed(2)} °C`;
+        average.textContent = `${((data.list[0].main.temp + data.list[1].main.temp + data.list[2].main.temp + data.list[3].main.temp)/4).toFixed(2)}°C`;
 
-        windSpeed.textContent = `${data.list[0].wind.speed.toFixed(2)} meter/sec`;
+        windSpeed.textContent = `${data.list[0].wind.speed.toFixed(2)} m/s`;
         humidity.textContent = `${data.list[0].main.humidity} %`;
         weatherParameter.textContent = data.list[0].weather[0].main;
         weatherDescription.textContent = data.list[0].weather[0].description;

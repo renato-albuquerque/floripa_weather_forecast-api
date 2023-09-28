@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 
     <script src="js/scripts.js" defer></script>
@@ -17,26 +19,34 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <h1 class="title">Floripa !</h1>
             <h2 class="subtitle">Weather Forecast</h2>
             <p class="source">Source: <a class="source-a" href="https://openweathermap.org/">OpenWeather API</a></p>
         </header>
-
+        
         <main>
             <p class="date">Date: <span>&nbsp;dd/mm/yyyy</span></p>
-            <p class="weather-1"></p>
-            <p class="weather-2"></p>
-            <p class="weather-3"></p>
-            <p class="weather-4"></p>
+
+            <h3 class="headline">Next Temperatures:</h3>
+            <div class="wrapWeathers">
+                <p class="weather-1"></p>
+                <p class="weather-2"></p>
+                <p class="weather-3"></p>
+                <p class="weather-4"></p>
+            </div>
+
+            <h3 class="headline">Average:</h3>
             <p class="average"></p>
-            <p class="windSpeed"></p>
-            <p class="humidity"></p>
-            <p class="weatherParameter"></p>
-            <p class="weatherDescription"></p>
+
+            <h3 class="headline">Other Information:</h3>
+            <p class="windSpeed"><i class="fa-solid fa-wind"></i>Wind Speed: <span></span></p>
+            <p class="humidity"><i class="fa-solid fa-droplet"></i>Humidity: <span></span></p>
+            <p class="weatherParameter"><i class="fa-solid fa-circle-info"></i>Weather Condition: <span></span></p>
+            <p class="weatherDescription"><i class="fa-solid fa-circle-info"></i>Weather Description: <span></span></p>
+
             <button class="button">Click here!</button>
         </main>
-        
         <footer class="footer">
             <p class="footerNameJob">Developed by <a href="https://rma-contacts.vercel.app/">Renato Albuquerque</a></p>
             <p class="footerNameJob">Front-End Developer</p>
