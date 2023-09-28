@@ -44,7 +44,7 @@ date.textContent = `${todayDate.getDate()}/${todayDate.getMonth()+1}/${todayDate
 
 // events
 
-button.addEventListener("click", weatherForecast)
+/* button.addEventListener("click", weatherForecast) */
 
 
 // functions
@@ -73,4 +73,5 @@ async function weatherForecast() {
     }
 }
 
+weatherForecast()
 

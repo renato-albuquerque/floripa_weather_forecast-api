@@ -129,6 +129,7 @@ body {
 .wrapOtherInformation {
     width: 28rem;
     line-height: 2rem;
+    margin-bottom: 2rem;
 }
 
 .windSpeed, .humidity, .weatherParameter, .weatherDescription {
@@ -142,10 +143,24 @@ body {
 
 .fa-wind, .fa-circle-info {
     margin-right: 0.5rem;
+    color: #37586C;
 }
 
 .fa-droplet {
     margin-right: 0.9rem;
+    color: #37586C;
+}
+
+.button {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #FDF8E6;
+    color: #CE8026;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 /* footer */
