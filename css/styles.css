@@ -59,7 +59,9 @@ body {
     font-family: 'Pacifico', cursive;
     font-size: 5rem;
     text-align: center;
+    text-shadow: 2px 2px 3px black;
     margin-bottom: 2rem;
+    color:  #FDF8E6;
 }
 
 .subtitle {
@@ -74,21 +76,29 @@ body {
 }
 
 .source-a {
-    color: blue;
+    color: #FDF8E6;
+    font-weight: bold;
 }
 
 /* main */
 
+.main {
+    margin-bottom: 4rem;
+}
+
 .date {
     font-size: 2.5rem;
     text-align: center;
+    text-shadow: 2px 2px 3px black;
     margin-bottom: 1rem;
+    color: #FDF8E6;
 }
 
 .headline {
     font-size: 2.5rem;
     font-family: 'Pacifico', cursive;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .wrapWeathers {
@@ -100,14 +110,14 @@ body {
 }
 
 .weather-1, .weather-2, .weather-3, .weather-4 {
-    background-color: black;
+    background-color: #CE8026;
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
 } 
 
 .average {
-    background-color: black;
+    background-color: #CE8026;
     color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -116,8 +126,40 @@ body {
     margin: 0 auto 1rem;    /* top | left and right | bottom */
 }
 
+.wrapOtherInformation {
+    width: 28rem;
+    line-height: 2rem;
+}
+
 .windSpeed, .humidity, .weatherParameter, .weatherDescription {
-    
+    font-size: 1.5rem;
+}
+
+.windSpeed span, .humidity span, .weatherParameter span, .weatherDescription span {
+    color: white;
+    font-weight: bold;
+}
+
+.fa-wind, .fa-circle-info {
+    margin-right: 0.5rem;
+}
+
+.fa-droplet {
+    margin-right: 0.9rem;
+}
+
+/* footer */
+
+.footerNameJob {
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.footerNameJob a {
+    color: white;
+    font-weight: bold;
 }
 
 

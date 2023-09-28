@@ -25,7 +25,7 @@
             <p class="source">Source: <a class="source-a" href="https://openweathermap.org/">OpenWeather API</a></p>
         </header>
         
-        <main>
+        <main class="main">
             <p class="date">Date: <span>&nbsp;dd/mm/yyyy</span></p>
 
             <h3 class="headline">Next Temperatures:</h3>
@@ -40,10 +40,12 @@
             <p class="average"></p>
 
             <h3 class="headline">Other Information:</h3>
-            <p class="windSpeed"><i class="fa-solid fa-wind"></i>Wind Speed: <span></span></p>
-            <p class="humidity"><i class="fa-solid fa-droplet"></i>Humidity: <span></span></p>
-            <p class="weatherParameter"><i class="fa-solid fa-circle-info"></i>Weather Condition: <span></span></p>
-            <p class="weatherDescription"><i class="fa-solid fa-circle-info"></i>Weather Description: <span></span></p>
+            <div class="wrapOtherInformation">
+                <p class="windSpeed"><i class="fa-solid fa-wind"></i>Wind Speed: <span></span></p>
+                <p class="humidity"><i class="fa-solid fa-droplet"></i>Humidity: <span></span></p>
+                <p class="weatherParameter"><i class="fa-solid fa-circle-info"></i>Weather Condition: <span></span></p>
+                <p class="weatherDescription"><i class="fa-solid fa-circle-info"></i>Weather Description: <span></span></p>
+            </div>
 
             <button class="button">Click here!</button>
         </main>
