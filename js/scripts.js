@@ -22,15 +22,24 @@
 // variables
 
 let date = document.querySelector(".date span")
+
 let weather1 = document.querySelector(".weather-1")
 let weather2 = document.querySelector(".weather-2")
 let weather3 = document.querySelector(".weather-3")
 let weather4 = document.querySelector(".weather-4") 
+
+let time1 = document.querySelector(".time-1")
+let time2 = document.querySelector(".time-2")
+let time3 = document.querySelector(".time-3")
+let time4 = document.querySelector(".time-4")
+
 let average = document.querySelector(".average")
+
 let windSpeed = document.querySelector(".windSpeed span")
 let humidity = document.querySelector(".humidity span")
 let weatherParameter = document.querySelector(".weatherParameter span")
 let weatherDescription = document.querySelector(".weatherDescription span")
+
 let button = document.querySelector(".button") 
 
 const apiKey = "a0b6dbf50b04399ef8f5079a298d1e04"
@@ -43,8 +52,6 @@ console.log(todayDate);
 date.textContent = `${todayDate.getDate()}/${todayDate.getMonth()+1}/${todayDate.getFullYear()}`;
 
 // events
-
-/* button.addEventListener("click", weatherForecast) */
 
 
 // functions
@@ -60,6 +67,11 @@ async function weatherForecast() {
         weather2.textContent = `${data.list[1].main.temp.toFixed(2)}°C`;
         weather3.textContent = `${data.list[2].main.temp.toFixed(2)}°C`;
         weather4.textContent = `${data.list[3].main.temp.toFixed(2)}°C`;
+
+        time1.textContent = data.list[0].dt_txt;
+        time2.textContent = data.list[1].dt_txt;
+        time3.textContent = data.list[2].dt_txt;
+        time4.textContent = data.list[3].dt_txt;
 
         average.textContent = `${((data.list[0].main.temp + data.list[1].main.temp + data.list[2].main.temp + data.list[3].main.temp)/4).toFixed(2)}°C`;
 
