@@ -6,7 +6,35 @@
 
 @media (min-width: 375px) {
     .container {
-        width: 34.5rem;
+        width: 345px;
+    }
+
+    .wrapWeathers {
+        gap: 0.8rem;
+    }
+    
+    .weather-1, .weather-2, .weather-3, .weather-4 {
+       font-size: 1.8rem;
+    }
+    
+    .time {
+        font-size: 0.7rem;
+    }
+    
+    .average {
+        font-size: 1.8rem;
+    }
+    
+    .wrapOtherInformation {
+        width: 30rem;
+    }
+    
+    .windSpeed, .humidity, .weatherParameter, .weatherDescription {
+        font-size: 1.8rem;
+    }
+    
+    .windSpeed span, .humidity span, .weatherParameter span, .weatherDescription span {
+        font-size: 1.8rem;
     }
 }
 
@@ -14,7 +42,7 @@
 
 @media (min-width: 425px) {
     .container {
-        width: 39.5rem;
+        width: 395px;
     }
 }
 
