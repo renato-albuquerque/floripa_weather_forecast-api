@@ -1,0 +1,21 @@
+:root {
+    font-size: 62.5%;
+}
+
+/* mobile m, 375px */
+
+@media (min-width: 375px) {
+    body {
+        width: 33.5rem;
+    }
+}
+
+/* mobile l, 425px */
+
+@media (min-width: 425px) {
+    body {
+        width: 38.5rem;
+    }
+}
+
+
