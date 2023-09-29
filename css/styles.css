@@ -126,7 +126,7 @@ body {
     border-radius: 0.5rem;
     width: fit-content;
     display: block;
-    margin: 0 auto 1rem;    /* top | left and right | bottom */
+    margin: 0 auto 2rem;    /* top | left and right | bottom */
 }
 
 .wrapOtherInformation {
