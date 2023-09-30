@@ -36,7 +36,6 @@ Users should be able to:
 
 ### Screenshot
 
-#### Responsive Viewer
 ![screenshot](assets/screencapture-floripa-weather-forecast-api.png)
 
 ### Links
