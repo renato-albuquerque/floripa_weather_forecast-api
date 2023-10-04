@@ -1,5 +1,7 @@
 # Floripa Weather Forecast | OpenWeather API
 
+[uTech](https://utech.com.br/site/) Company Challenge, Internship Program.
+
 Project: Development of a weather forecast app for the City of Florianópolis, Brazil. <br>
 "Mobile First" project developed with HTML, CSS and JavaScript. Responsive page for screen sizes: 320px, 375px, 425px.
 
