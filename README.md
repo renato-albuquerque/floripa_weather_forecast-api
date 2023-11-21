@@ -1,12 +1,14 @@
 # Floripa Weather Forecast | OpenWeather API
 
-Project: Development of a weather forecast app for the City of Florianópolis, Brazil.
+[uTech](https://utech.com.br/site/) Company Challenge, Internship Program.
+
+Project: Development of a weather forecast app for the City of Florianópolis, Brazil. <br>
 "Mobile First" project developed with HTML, CSS and JavaScript. Responsive page for screen sizes: 320px, 375px, 425px.
 
 Back-End challenge: 
 - [x] Consume data from the API: https://rapidapi.com/KirylBokiy/api/openweather43/
 - Provide at least two routes to the front-end: 
-- [x] Return each of the temperatures, in degrees Celsius, of the next 4 weather forecasts available for the city of “florianópolis”.
+- [x] Return each of the temperatures, in degrees Celsius, of the next 4 weather forecasts available for the city of “Florianópolis”.
 - [x] Plus: Below each temperature, show the date/time of the weather forecast.
 - [x] Show a field with average temperatures.
 - [x] Consume other data from the API, private choice. Ex.: Wind speed, humidity, weather condition and weather description.
@@ -36,7 +38,6 @@ Users should be able to:
 
 ### Screenshot
 
-#### Responsive Viewer
 ![screenshot](assets/screencapture-floripa-weather-forecast-api.png)
 
 ### Links
